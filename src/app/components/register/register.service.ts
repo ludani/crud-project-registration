@@ -27,8 +27,18 @@ export class RegisterService {
 
     read(): Observable<Register[]>{
       return this.http.get<Register[]>(this.baseUrl)
-      
     }
-  }
+
+    readById(id: string): Observable<Register>{
+      const url = `${this.baseUrl}/${id}`
+      return this.http.get<Register>(url);
+      };  
+      
+      update(register: Register): Observable<Register>{
+        const url = `${this.baseUrl}/${register.id}`
+        return this.http.put<Register>(url, register);
+        };  
+    }
+
 
    
