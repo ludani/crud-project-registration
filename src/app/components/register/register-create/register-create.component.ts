@@ -22,7 +22,7 @@ export class RegisterCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createProduct(): void{
+  createRegister(): void{
     this.registerService.create(this.register).subscribe(() => {
       this.registerService.showOnConsole('Projeto criado!');
       this.router.navigate(['/register']);
