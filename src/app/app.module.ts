@@ -36,6 +36,8 @@ import { registerLocaleData } from '@angular/common';
 import { RegisterUpdateComponent } from './components/register/register-update/register-update.component';
 import { RegisterDeleteComponent } from './components/register/register-delete/register-delete.component'
 
+import { TextMaskModule } from 'angular2-text-mask';
+
 registerLocaleData(localePt);
 
 @NgModule({
@@ -70,6 +72,7 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    TextMaskModule
   ],
   providers: [{
     provide: LOCALE_ID,

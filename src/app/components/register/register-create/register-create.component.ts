@@ -11,6 +11,14 @@ import {Router} from '@angular/router';
 })
 export class RegisterCreateComponent implements OnInit {
 
+  // priceMask = ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
+
+  // dateInitMask = [/[1-9]/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/];
+
+  // dateFinishMask = [/[1-9]/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/];
+
+  // dateFinishMask = [/[1-9]/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/];
+
   register: Register = {
     nameProject: '',
     price: null,
