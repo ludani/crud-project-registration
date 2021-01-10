@@ -4,6 +4,6 @@ export interface Register {
     // dateStart: Date, // DATA DE INÍCIO
     // dateFinish: Date, // DATA DE TÉRMINO
     price: number,  // VALOR DO PROJETO
-    // risc: number, // RISCO
+    risc: number, // RISCO
     // members: string //PARTICIPANTES
 }

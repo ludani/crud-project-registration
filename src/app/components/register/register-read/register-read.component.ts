@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterReadComponent implements OnInit {
 
   readRegister: Register[]
-  displayedColumns = ['id', 'nameProject', 'price', 'action']
+  displayedColumns = ['id', 'nameProject', 'price', 'risc', 'action']
 
   constructor(private registerService: RegisterService) { }
 

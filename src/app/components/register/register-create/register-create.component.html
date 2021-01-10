@@ -18,14 +18,14 @@
             [(ngModel)]="register.price" name="price" >
             <!-- [(ngModel)]="register.price" name="price" [textMask]="{mask: dateMask}"> -->
         </mat-form-field>   
-        <!-- <mat-form-field>
-            <input matInput placeholder="Risco"
-            [(ngModel)]="register.price" name="price">
-        </mat-form-field>   
         <mat-form-field>
+            <input matInput placeholder="Risco"
+            [(ngModel)]="register.risc" name="price">
+        </mat-form-field>   
+        <!-- <mat-form-field>
             <input matInput placeholder="Participantes"
             [(ngModel)]="register.price" name="price">
-        </mat-form-field>         -->
+        </mat-form-field>          -->
     </form>
     <button mat-raised-button (click)="createRegister()" color="primary">
         Salvar

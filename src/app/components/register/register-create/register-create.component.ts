@@ -22,6 +22,7 @@ export class RegisterCreateComponent implements OnInit {
   register: Register = {
     nameProject: '',
     price: null,
+    risc: null
   }
 
   constructor(private registerService: RegisterService, 
