@@ -19,18 +19,14 @@ export class RegisterDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-  }
-  deleteRegister(): void {
     //MUDAR O TIPO | ESTÁ SÓ DELETANDO OS DADOS DAS PLANILHAS
-    const id = this.route.snapshot.paramMap.get('1');
-    this.registerService.readById(id).subscribe(register => {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.registerService.readById(id).subscribe((register) => {
       this.register = register;
-    }
-   
-    )
+    });
   }
 
-  delete(): void {
+  deleteRegister(): void {
     this.registerService.delete(this.register.id).subscribe(() => {
       this.registerService.showOnConsole('Projeto excluído com sucesso !')
       this.router.navigate(['/register'])

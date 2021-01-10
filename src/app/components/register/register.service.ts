@@ -29,7 +29,7 @@ export class RegisterService {
       return this.http.get<Register[]>(this.baseUrl)
     }
 
-    readById(id: string): Observable<Register>{
+    readById(id: number): Observable<Register>{
       const url = `${this.baseUrl}/${id}`
       return this.http.get<Register>(url);
       };  
