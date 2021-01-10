@@ -6,9 +6,25 @@
             [(ngModel)]="register.nameProject" name="name">
         </mat-form-field>
         <mat-form-field>
+            <input matInput placeholder="Data de início"
+            [(ngModel)]="register.price" name="price">
+        </mat-form-field>   
+        <mat-form-field>
+            <input matInput placeholder="Data de término"
+            [(ngModel)]="register.price" name="price">
+        </mat-form-field>   
+        <mat-form-field>
             <input matInput placeholder="Preço (R$)"
             [(ngModel)]="register.price" name="price">
-        </mat-form-field>
+        </mat-form-field>   
+        <mat-form-field>
+            <input matInput placeholder="Risco"
+            [(ngModel)]="register.price" name="price">
+        </mat-form-field>   
+        <mat-form-field>
+            <input matInput placeholder="Participantes"
+            [(ngModel)]="register.price" name="price">
+        </mat-form-field>        
     </form>
     <button mat-raised-button (click)="createRegister()" color="primary">
         Salvar
