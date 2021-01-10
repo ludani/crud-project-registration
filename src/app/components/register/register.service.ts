@@ -38,6 +38,11 @@ export class RegisterService {
         const url = `${this.baseUrl}/${register.id}`
         return this.http.put<Register>(url, register);
         };  
+
+      delete(id: string): Observable<Register>{
+        const url = `${this.baseUrl}/${id}`;
+       return this.http.delete<Register>(url)
+      }
     }
 
 
