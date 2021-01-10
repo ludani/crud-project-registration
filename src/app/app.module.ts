@@ -32,7 +32,11 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 
 import localePt from '@angular/common/locales/pt';
-import { registerLocaleData } from '@angular/common'
+import { registerLocaleData } from '@angular/common';
+import { RegisterUpdateComponent } from './components/register/register-update/register-update.component';
+import { RegisterDeleteComponent } from './components/register/register-delete/register-delete.component'
+
+import { TextMaskModule } from 'angular2-text-mask';
 
 registerLocaleData(localePt);
 
@@ -47,6 +51,8 @@ registerLocaleData(localePt);
     RegisterCreateComponent,
     RegisterReadComponent,
     RegisterReadTableComponent,
+    RegisterUpdateComponent,
+    RegisterDeleteComponent,
   
   ],
   imports: [
@@ -66,6 +72,7 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    TextMaskModule
   ],
   providers: [{
     provide: LOCALE_ID,

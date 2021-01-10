@@ -11,6 +11,14 @@ import {Router} from '@angular/router';
 })
 export class RegisterCreateComponent implements OnInit {
 
+  // priceMask = ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
+
+  // dateInitMask = [/[1-9]/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/];
+
+  // dateFinishMask = [/[1-9]/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/];
+
+  // dateFinishMask = [/[1-9]/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/];
+
   register: Register = {
     nameProject: '',
     price: null,
@@ -22,7 +30,7 @@ export class RegisterCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createProduct(): void{
+  createRegister(): void{
     this.registerService.create(this.register).subscribe(() => {
       this.registerService.showOnConsole('Projeto criado!');
       this.router.navigate(['/register']);
@@ -30,6 +38,7 @@ export class RegisterCreateComponent implements OnInit {
   }
 
   cancel(): void{
+    this.router.navigate(['/register']);
     
   }
 
