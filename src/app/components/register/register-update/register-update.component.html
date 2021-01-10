@@ -6,8 +6,24 @@
             [(ngModel)]="register.nameProject" name="name">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Preço (R$)"
+            <input matInput placeholder="Data de Início"
+            [(ngModel)]="register.dateStart" name="dateStart">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data de Término"
+            [(ngModel)]="register.dateFinish" name="dateFinish">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço"
             [(ngModel)]="register.price" name="price">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Risco"
+            [(ngModel)]="register.risc" name="risc">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Members"
+            [(ngModel)]="register.members" name="members">
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="updateRegister()" color="primary">
