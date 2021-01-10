@@ -6,8 +6,24 @@
             [value]="register.nameProject" name="name" disabled>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Preço (R$)"
+            <input matInput placeholder="DATA DE INÍCIO"
+            [value]="register.dateStart" name="price" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="DATA DE TÉRMINO"
+            [value]="register.dateFinish" name="price" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="VALOR DO PROJETO"
             [value]="register.price" name="price" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="RISCO"
+            [value]="register.risc" name="price" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="PARTICIPANTES"
+            [value]="register.members" name="price" disabled>
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="deleteRegister()" color="warn">
