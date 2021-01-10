@@ -1,1 +1,20 @@
-<p>register-delete works!</p>
+<mat-card>
+    <mat-card-title>Excluir Projeto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome Projeto"
+            [value]="register.nameProject" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)"
+            [value]="register.price" name="price" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteRegister()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()" color="warn">
+       Cancelar
+    </button>
+</mat-card>

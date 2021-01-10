@@ -39,7 +39,7 @@ export class RegisterService {
         return this.http.put<Register>(url, register);
         };  
 
-      delete(id: string): Observable<Register>{
+      delete(id: number): Observable<Register>{
         const url = `${this.baseUrl}/${id}`;
        return this.http.delete<Register>(url)
       }
