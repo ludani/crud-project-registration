@@ -11,7 +11,10 @@ import { Observable } from 'rxjs';
 export class RegisterService {
   //PASSANDO O PARAMETRO POST AQUI
 
-  baseUrl = 'https://5ff8b52a17386d0017b51780.mockapi.io/api/project';
+  baseUrl = '';
+
+  // API FACE
+  // https://5ff8b52a17386d0017b51780.mockapi.io/api/project
   constructor(private snackbar: MatSnackBar, private http: HttpClient) { }
  //EXEMPLO
   showOnConsole(msg: string): void {
