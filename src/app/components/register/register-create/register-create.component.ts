@@ -30,6 +30,7 @@ export class RegisterCreateComponent implements OnInit {
   }
 
   cancel(): void{
+    this.router.navigate(['/register']);
     
   }
 
